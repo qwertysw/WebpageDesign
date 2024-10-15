@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Trading Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="min-h-screen bg-black text-white font-sans overflow-hidden">
+        <!-- Floating Background -->
+        <div id="floatingBackground" class="fixed inset-0 overflow-hidden pointer-events-none"></div>
+
+        <!-- Header -->
+        <header class="fixed top-0 left-0 right-0 z-50 mix-blend-difference">
+            <div class="container mx-auto px-4 py-6">
+                <h1 class="text-6xl font-black tracking-tighter transform hover:scale-105 transition-transform cursor-pointer">
+                    The Trading Post
+                </h1>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="pt-32">
+            <!-- Hero Section -->
+            <section class="min-h-screen flex flex-col items-center justify-center">
+                <div class="text-center">
+                    <h2 class="text-8xl font-black mb-6 leading-none tracking-tight">
+                        <span class="block tilted-text text-gray-300">Trade</span>
+                        <span class="block tilted-text mt-4">Play</span>
+                        <span class="block tilted-text mt-4 text-gray-300">Collect</span>
+                    </h2>
+                    <p class="text-xl mb-8 max-w-2xl mx-auto font-light tracking-wide">
+                        Your gateway to the world of trading card games and collectibles
+                    </p>
+                    <button class="explore-btn text-lg px-6 rounded-none border-2 hover:bg-white hover:text-black transition-colors">
+                        Explore
+                    </button>
+                </div>
+            </section>            
+
+            <!-- Featured Items -->
+            <section class="py-32">
+                <div class="container mx-auto px-4">
+                    <h3 class="text-6xl font-black mb-16 tracking-tight text-center">Featured Items</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="featuredItems"></div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="py-32 relative">
+                <div class="container mx-auto px-4 relative z-10">
+                    <h3 class="text-6xl font-black mb-8 tracking-tight text-center">Our Story</h3>
+                    <p class="text-lg text-center max-w-3xl mx-auto mb-8 font-light tracking-wide leading-relaxed">
+                        The Trading Post is your gateway to the exciting world of trading card games and collectibles. 
+                        Founded by passionate collectors, we curate the finest selection of rare and sought-after items 
+                        for enthusiasts and newcomers alike.
+                    </p>
+                </div>
+            </section>
+
+        <!-- Footer -->
+        <footer class="py-8 border-t border-gray-800">
+            <div class="container mx-auto px-4 text-center">
+                <p class="font-light tracking-widest text-sm">&copy; 2023 The Trading Post. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
